@@ -1,0 +1,20 @@
+# define a global platform for project
+platform :ios, '14.0'
+source 'https://github.com/CocoaPods/Specs.git'
+
+use_frameworks!
+
+target 'KMMPlayground' do
+  pod 'Shared', :path => '../shared'
+
+  target 'KMMPlaygroundTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'KMMPlaygroundUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

@@ -1,0 +1,29 @@
+apply from: rootProject.file("gradle/experimental.gradle")
+
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+        // Needed only for SNAPSHOT versions
+        // maven { url "http://oss.sonatype.org/content/repositories/snapshots/" }
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "org.jetbrains.kotlin:kotlin-serialization:$kotlin_version"
+        classpath 'com.android.tools.build:gradle:7.1.0-beta05'
+        classpath "com.google.dagger:hilt-android-gradle-plugin:$hilt_version"
+    }
+}
+
+allprojects {
+    // the only place where HostManager could be instantiated
+    project.ext.hostManager = new org.jetbrains.kotlin.konan.target.HostManager()
+
+    repositories {
+        mavenCentral()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

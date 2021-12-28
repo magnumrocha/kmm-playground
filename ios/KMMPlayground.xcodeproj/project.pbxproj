@@ -1,0 +1,712 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		16D34DF4E0443D3D242EFEE7 /* Pods_KMMPlaygroundUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D9F12CBB5513EDAB4AAFB2F /* Pods_KMMPlaygroundUITests.framework */; };
+		1D3B3EA82326D1B000CFB0ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D3B3EA72326D1B000CFB0ED /* Assets.xcassets */; };
+		1D3B3EB92326D1B000CFB0ED /* KMMPlaygroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3B3EB82326D1B000CFB0ED /* KMMPlaygroundTests.swift */; };
+		1D3B3EC42326D1B000CFB0ED /* KMMPlaygroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3B3EC32326D1B000CFB0ED /* KMMPlaygroundUITests.swift */; };
+		24D1F6D795B802A839522C6D /* Pods_KMMPlaygroundTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60D6C92284D4B728536FCB02 /* Pods_KMMPlaygroundTests.framework */; };
+		67287A10275536560007D0BD /* ImageListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67287A0F275536560007D0BD /* ImageListView.swift */; };
+		67287A12275552EA0007D0BD /* ImagesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67287A11275552EA0007D0BD /* ImagesDataSource.swift */; };
+		6783B32F259CA3FF00D3E1E9 /* KMMPlaygroundApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6783B32E259CA3FF00D3E1E9 /* KMMPlaygroundApp.swift */; };
+		6783B340259CA48B00D3E1E9 /* ConnectionStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6783B33F259CA48B00D3E1E9 /* ConnectionStateView.swift */; };
+		CE8F411B7F85030ACB755F67 /* Pods_KMMPlayground.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB7BB248FE45B2E77993088D /* Pods_KMMPlayground.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1D3B3EB52326D1B000CFB0ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D3B3E962326D1AE00CFB0ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1D3B3E9D2326D1AE00CFB0ED;
+			remoteInfo = KMMPlayground;
+		};
+		1D3B3EC02326D1B000CFB0ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D3B3E962326D1AE00CFB0ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1D3B3E9D2326D1AE00CFB0ED;
+			remoteInfo = KMMPlayground;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		073B9A309286E46A57D7946D /* Pods-KMMPlaygroundUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KMMPlaygroundUITests.release.xcconfig"; path = "Target Support Files/Pods-KMMPlaygroundUITests/Pods-KMMPlaygroundUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1D3B3E9E2326D1AE00CFB0ED /* KMMPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KMMPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D3B3EA72326D1B000CFB0ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1D3B3EAF2326D1B000CFB0ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D3B3EB42326D1B000CFB0ED /* KMMPlaygroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KMMPlaygroundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D3B3EB82326D1B000CFB0ED /* KMMPlaygroundTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KMMPlaygroundTests.swift; sourceTree = "<group>"; };
+		1D3B3EBA2326D1B000CFB0ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D3B3EBF2326D1B000CFB0ED /* KMMPlaygroundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KMMPlaygroundUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D3B3EC32326D1B000CFB0ED /* KMMPlaygroundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KMMPlaygroundUITests.swift; sourceTree = "<group>"; };
+		1D3B3EC52326D1B000CFB0ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25060B7586940F86D51FA6C3 /* Pods-KMMPlaygroundUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KMMPlaygroundUITests.debug.xcconfig"; path = "Target Support Files/Pods-KMMPlaygroundUITests/Pods-KMMPlaygroundUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4965C259D70F79EC988AE221 /* Pods-KMMPlayground.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KMMPlayground.debug.xcconfig"; path = "Target Support Files/Pods-KMMPlayground/Pods-KMMPlayground.debug.xcconfig"; sourceTree = "<group>"; };
+		60D6C92284D4B728536FCB02 /* Pods_KMMPlaygroundTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KMMPlaygroundTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		67287A0F275536560007D0BD /* ImageListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageListView.swift; sourceTree = "<group>"; };
+		67287A11275552EA0007D0BD /* ImagesDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesDataSource.swift; sourceTree = "<group>"; };
+		6783B32E259CA3FF00D3E1E9 /* KMMPlaygroundApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KMMPlaygroundApp.swift; sourceTree = "<group>"; };
+		6783B33F259CA48B00D3E1E9 /* ConnectionStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionStateView.swift; sourceTree = "<group>"; };
+		6783B367259CA83D00D3E1E9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6ACB432DD90E948A49748553 /* Pods-KMMPlayground.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KMMPlayground.release.xcconfig"; path = "Target Support Files/Pods-KMMPlayground/Pods-KMMPlayground.release.xcconfig"; sourceTree = "<group>"; };
+		7D9F12CBB5513EDAB4AAFB2F /* Pods_KMMPlaygroundUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KMMPlaygroundUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A76493AE8F9DB44E05752BE6 /* Pods-KMMPlaygroundTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KMMPlaygroundTests.release.xcconfig"; path = "Target Support Files/Pods-KMMPlaygroundTests/Pods-KMMPlaygroundTests.release.xcconfig"; sourceTree = "<group>"; };
+		A7E85F611B1BD9C4C3783362 /* Pods-KMMPlaygroundTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KMMPlaygroundTests.debug.xcconfig"; path = "Target Support Files/Pods-KMMPlaygroundTests/Pods-KMMPlaygroundTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CB7BB248FE45B2E77993088D /* Pods_KMMPlayground.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KMMPlayground.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D3B3E9B2326D1AE00CFB0ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE8F411B7F85030ACB755F67 /* Pods_KMMPlayground.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D3B3EB12326D1B000CFB0ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24D1F6D795B802A839522C6D /* Pods_KMMPlaygroundTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D3B3EBC2326D1B000CFB0ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16D34DF4E0443D3D242EFEE7 /* Pods_KMMPlaygroundUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D3B3E952326D1AE00CFB0ED = {
+			isa = PBXGroup;
+			children = (
+				1D3B3EA02326D1AE00CFB0ED /* KMMPlayground */,
+				1D3B3EB72326D1B000CFB0ED /* KMMPlaygroundTests */,
+				1D3B3EC22326D1B000CFB0ED /* KMMPlaygroundUITests */,
+				1D3B3E9F2326D1AE00CFB0ED /* Products */,
+				6A36E90CA1C70085F77B7D76 /* Pods */,
+				B8210F94CB8FFD5DCB8AA9BC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1D3B3E9F2326D1AE00CFB0ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D3B3E9E2326D1AE00CFB0ED /* KMMPlayground.app */,
+				1D3B3EB42326D1B000CFB0ED /* KMMPlaygroundTests.xctest */,
+				1D3B3EBF2326D1B000CFB0ED /* KMMPlaygroundUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1D3B3EA02326D1AE00CFB0ED /* KMMPlayground */ = {
+			isa = PBXGroup;
+			children = (
+				6783B32E259CA3FF00D3E1E9 /* KMMPlaygroundApp.swift */,
+				6783B33F259CA48B00D3E1E9 /* ConnectionStateView.swift */,
+				67287A0F275536560007D0BD /* ImageListView.swift */,
+				67287A11275552EA0007D0BD /* ImagesDataSource.swift */,
+				1D3B3EA72326D1B000CFB0ED /* Assets.xcassets */,
+				1D3B3EAF2326D1B000CFB0ED /* Info.plist */,
+				6783B366259CA83D00D3E1E9 /* Preview Content */,
+			);
+			path = KMMPlayground;
+			sourceTree = "<group>";
+		};
+		1D3B3EB72326D1B000CFB0ED /* KMMPlaygroundTests */ = {
+			isa = PBXGroup;
+			children = (
+				1D3B3EB82326D1B000CFB0ED /* KMMPlaygroundTests.swift */,
+				1D3B3EBA2326D1B000CFB0ED /* Info.plist */,
+			);
+			path = KMMPlaygroundTests;
+			sourceTree = "<group>";
+		};
+		1D3B3EC22326D1B000CFB0ED /* KMMPlaygroundUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1D3B3EC32326D1B000CFB0ED /* KMMPlaygroundUITests.swift */,
+				1D3B3EC52326D1B000CFB0ED /* Info.plist */,
+			);
+			path = KMMPlaygroundUITests;
+			sourceTree = "<group>";
+		};
+		6783B366259CA83D00D3E1E9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6783B367259CA83D00D3E1E9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6A36E90CA1C70085F77B7D76 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4965C259D70F79EC988AE221 /* Pods-KMMPlayground.debug.xcconfig */,
+				6ACB432DD90E948A49748553 /* Pods-KMMPlayground.release.xcconfig */,
+				A7E85F611B1BD9C4C3783362 /* Pods-KMMPlaygroundTests.debug.xcconfig */,
+				A76493AE8F9DB44E05752BE6 /* Pods-KMMPlaygroundTests.release.xcconfig */,
+				25060B7586940F86D51FA6C3 /* Pods-KMMPlaygroundUITests.debug.xcconfig */,
+				073B9A309286E46A57D7946D /* Pods-KMMPlaygroundUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B8210F94CB8FFD5DCB8AA9BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB7BB248FE45B2E77993088D /* Pods_KMMPlayground.framework */,
+				60D6C92284D4B728536FCB02 /* Pods_KMMPlaygroundTests.framework */,
+				7D9F12CBB5513EDAB4AAFB2F /* Pods_KMMPlaygroundUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D3B3E9D2326D1AE00CFB0ED /* KMMPlayground */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D3B3EC82326D1B000CFB0ED /* Build configuration list for PBXNativeTarget "KMMPlayground" */;
+			buildPhases = (
+				7E1354D068D9F5586D65E0EE /* [CP] Check Pods Manifest.lock */,
+				1D3B3E9A2326D1AE00CFB0ED /* Sources */,
+				1D3B3E9B2326D1AE00CFB0ED /* Frameworks */,
+				1D3B3E9C2326D1AE00CFB0ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KMMPlayground;
+			productName = KMMPlayground;
+			productReference = 1D3B3E9E2326D1AE00CFB0ED /* KMMPlayground.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1D3B3EB32326D1B000CFB0ED /* KMMPlaygroundTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D3B3ECB2326D1B000CFB0ED /* Build configuration list for PBXNativeTarget "KMMPlaygroundTests" */;
+			buildPhases = (
+				70521A3CFA42F20E37B24B4E /* [CP] Check Pods Manifest.lock */,
+				1D3B3EB02326D1B000CFB0ED /* Sources */,
+				1D3B3EB12326D1B000CFB0ED /* Frameworks */,
+				1D3B3EB22326D1B000CFB0ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1D3B3EB62326D1B000CFB0ED /* PBXTargetDependency */,
+			);
+			name = KMMPlaygroundTests;
+			productName = KMMPlaygroundTests;
+			productReference = 1D3B3EB42326D1B000CFB0ED /* KMMPlaygroundTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1D3B3EBE2326D1B000CFB0ED /* KMMPlaygroundUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D3B3ECE2326D1B000CFB0ED /* Build configuration list for PBXNativeTarget "KMMPlaygroundUITests" */;
+			buildPhases = (
+				FAE908F04C1B5CB6CB76CAC9 /* [CP] Check Pods Manifest.lock */,
+				1D3B3EBB2326D1B000CFB0ED /* Sources */,
+				1D3B3EBC2326D1B000CFB0ED /* Frameworks */,
+				1D3B3EBD2326D1B000CFB0ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1D3B3EC12326D1B000CFB0ED /* PBXTargetDependency */,
+			);
+			name = KMMPlaygroundUITests;
+			productName = KMMPlaygroundUITests;
+			productReference = 1D3B3EBF2326D1B000CFB0ED /* KMMPlaygroundUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1D3B3E962326D1AE00CFB0ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1200;
+				ORGANIZATIONNAME = "Magnum Rocha";
+				TargetAttributes = {
+					1D3B3E9D2326D1AE00CFB0ED = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					1D3B3EB32326D1B000CFB0ED = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 1D3B3E9D2326D1AE00CFB0ED;
+					};
+					1D3B3EBE2326D1B000CFB0ED = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 1D3B3E9D2326D1AE00CFB0ED;
+					};
+				};
+			};
+			buildConfigurationList = 1D3B3E992326D1AE00CFB0ED /* Build configuration list for PBXProject "KMMPlayground" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1D3B3E952326D1AE00CFB0ED;
+			productRefGroup = 1D3B3E9F2326D1AE00CFB0ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D3B3E9D2326D1AE00CFB0ED /* KMMPlayground */,
+				1D3B3EB32326D1B000CFB0ED /* KMMPlaygroundTests */,
+				1D3B3EBE2326D1B000CFB0ED /* KMMPlaygroundUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D3B3E9C2326D1AE00CFB0ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D3B3EA82326D1B000CFB0ED /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D3B3EB22326D1B000CFB0ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D3B3EBD2326D1B000CFB0ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		70521A3CFA42F20E37B24B4E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KMMPlaygroundTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E1354D068D9F5586D65E0EE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KMMPlayground-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAE908F04C1B5CB6CB76CAC9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KMMPlaygroundUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D3B3E9A2326D1AE00CFB0ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6783B340259CA48B00D3E1E9 /* ConnectionStateView.swift in Sources */,
+				67287A10275536560007D0BD /* ImageListView.swift in Sources */,
+				67287A12275552EA0007D0BD /* ImagesDataSource.swift in Sources */,
+				6783B32F259CA3FF00D3E1E9 /* KMMPlaygroundApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D3B3EB02326D1B000CFB0ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D3B3EB92326D1B000CFB0ED /* KMMPlaygroundTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D3B3EBB2326D1B000CFB0ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D3B3EC42326D1B000CFB0ED /* KMMPlaygroundUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1D3B3EB62326D1B000CFB0ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1D3B3E9D2326D1AE00CFB0ED /* KMMPlayground */;
+			targetProxy = 1D3B3EB52326D1B000CFB0ED /* PBXContainerItemProxy */;
+		};
+		1D3B3EC12326D1B000CFB0ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1D3B3E9D2326D1AE00CFB0ED /* KMMPlayground */;
+			targetProxy = 1D3B3EC02326D1B000CFB0ED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1D3B3EC62326D1B000CFB0ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1D3B3EC72326D1B000CFB0ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1D3B3EC92326D1B000CFB0ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4965C259D70F79EC988AE221 /* Pods-KMMPlayground.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"KMMPlayground/Preview Content\"";
+				DEVELOPMENT_TEAM = Y4NP5D9L5A;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = KMMPlayground/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.magnumrocha.kmm.playground.ios;
+				PRODUCT_NAME = KMMPlayground;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1D3B3ECA2326D1B000CFB0ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6ACB432DD90E948A49748553 /* Pods-KMMPlayground.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"KMMPlayground/Preview Content\"";
+				DEVELOPMENT_TEAM = Y4NP5D9L5A;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = KMMPlayground/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.magnumrocha.kmm.playground.ios;
+				PRODUCT_NAME = KMMPlayground;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1D3B3ECC2326D1B000CFB0ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7E85F611B1BD9C4C3783362 /* Pods-KMMPlaygroundTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y4NP5D9L5A;
+				INFOPLIST_FILE = KMMPlaygroundTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.magnumrocha.kmm.playground.ios.KMMPlaygroundTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KMMPlayground.app/KMMPlayground";
+			};
+			name = Debug;
+		};
+		1D3B3ECD2326D1B000CFB0ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A76493AE8F9DB44E05752BE6 /* Pods-KMMPlaygroundTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y4NP5D9L5A;
+				INFOPLIST_FILE = KMMPlaygroundTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.magnumrocha.kmm.playground.ios.KMMPlaygroundTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KMMPlayground.app/KMMPlayground";
+			};
+			name = Release;
+		};
+		1D3B3ECF2326D1B000CFB0ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25060B7586940F86D51FA6C3 /* Pods-KMMPlaygroundUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y4NP5D9L5A;
+				INFOPLIST_FILE = KMMPlaygroundUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.magnumrocha.kmm.playground.ios.KMMPlaygroundUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KMMPlayground;
+			};
+			name = Debug;
+		};
+		1D3B3ED02326D1B000CFB0ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 073B9A309286E46A57D7946D /* Pods-KMMPlaygroundUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y4NP5D9L5A;
+				INFOPLIST_FILE = KMMPlaygroundUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.magnumrocha.kmm.playground.ios.KMMPlaygroundUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KMMPlayground;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D3B3E992326D1AE00CFB0ED /* Build configuration list for PBXProject "KMMPlayground" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D3B3EC62326D1B000CFB0ED /* Debug */,
+				1D3B3EC72326D1B000CFB0ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D3B3EC82326D1B000CFB0ED /* Build configuration list for PBXNativeTarget "KMMPlayground" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D3B3EC92326D1B000CFB0ED /* Debug */,
+				1D3B3ECA2326D1B000CFB0ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D3B3ECB2326D1B000CFB0ED /* Build configuration list for PBXNativeTarget "KMMPlaygroundTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D3B3ECC2326D1B000CFB0ED /* Debug */,
+				1D3B3ECD2326D1B000CFB0ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D3B3ECE2326D1B000CFB0ED /* Build configuration list for PBXNativeTarget "KMMPlaygroundUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D3B3ECF2326D1B000CFB0ED /* Debug */,
+				1D3B3ED02326D1B000CFB0ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1D3B3E962326D1AE00CFB0ED /* Project object */;
+}
