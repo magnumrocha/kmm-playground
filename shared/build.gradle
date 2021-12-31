@@ -48,7 +48,7 @@ kotlin {
                 implementation "io.ktor:ktor-client-serialization:$ktor_version"
 
                 // connection state
-                implementation 'dev.tmapps:konnection:1.1.2'
+                implementation 'dev.tmapps:konnection:1.1.4'
             }
         }
         commonTest {
